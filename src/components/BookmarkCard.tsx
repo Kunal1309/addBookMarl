@@ -109,21 +109,21 @@ export default function BookmarkCard({ bookmark, onDelete }: Props) {
       </div>
 
       {/* Content */}
-      <div className="flex-1 min-w-0">
-        
-          href={bookmark.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block group/link"
-        >
-          <h3 className="text-sm font-semibold text-white group-hover/link:text-indigo-300 truncate transition-colors">
-            {bookmark.title}
-          </h3>
-          <p className="text-xs text-[#6b7280] truncate mt-0.5 group-hover/link:text-[#9ca3af] transition-colors">
-            {domain}
-          </p>
-        </a>
-      </div>
+     <div className="flex-1 min-w-0">
+  <a
+    href={bookmark.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block group/link"
+  >
+    <h3 className="text-sm font-semibold text-white group-hover/link:text-indigo-300 truncate transition-colors">
+      {bookmark.title}
+    </h3>
+    <p className="text-xs text-[#6b7280] truncate mt-0.5 group-hover/link:text-[#9ca3af] transition-colors">
+      {domain}
+    </p>
+  </a>
+</div>
 
       {/* Time + Actions */}
       <div className="flex-shrink-0 flex items-center gap-2">
